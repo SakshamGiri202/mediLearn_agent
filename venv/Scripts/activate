@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Dell\mediLearn-agent\venv"
+VIRTUAL_ENV="C:\Users\Yashas H L\Documents\Projects\mediLearn-agent\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

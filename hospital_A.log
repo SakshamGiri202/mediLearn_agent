@@ -31,3 +31,36 @@ ValueError: too many values to unpack (expected 3)
 2025-11-08 11:40:20,386 [INFO] Hospital A \u2192 Training done. Accuracy=0.7, Samples=120
 2025-11-08 11:40:25,888 [INFO] Hospital A \u2192 Training done. Accuracy=0.767, Samples=120
 2025-11-08 11:40:30,985 [INFO] Hospital A \u2192 Training done. Accuracy=0.733, Samples=120
+2025-11-08 12:28:14,459 [INFO] \U0001f3e5 Hospital_A initialized on dataset heart_disease.csv
+2025-11-08 12:28:14,577 [INFO] \U0001f680 Starting Hospital_A server on port 8001
+2025-11-08 12:30:12,112 [INFO] Hospital_A: Training complete. Acc=0.667, Samples=120
+2025-11-08 12:30:22,782 [INFO] Hospital_A: Training complete. Acc=0.7, Samples=120
+2025-11-08 12:30:29,241 [INFO] Hospital_A: Training complete. Acc=0.467, Samples=120
+2025-11-08 12:31:46,228 [INFO] Hospital_A: Training complete. Acc=0.733, Samples=120
+2025-11-08 12:32:16,876 [INFO] Hospital_A: Training complete. Acc=0.6, Samples=120
+2025-11-08 12:32:18,403 [INFO] Hospital_A: Training complete. Acc=0.9, Samples=120
+2025-11-08 12:32:24,778 [INFO] Hospital_A: Training complete. Acc=0.7, Samples=120
+2025-11-08 12:32:27,476 [INFO] Hospital_A: Training complete. Acc=0.933, Samples=120
+2025-11-08 12:35:36,735 [INFO] Hospital_A: Training complete. Acc=0.667, Samples=120
+2025-11-08 12:35:51,536 [INFO] Hospital_A: Training complete. Acc=0.9, Samples=120
+2025-11-08 12:36:00,834 [INFO] Hospital_A: Training complete. Acc=0.7, Samples=120
+2025-11-08 12:36:10,828 [INFO] Hospital_A: Training complete. Acc=0.567, Samples=120
+2025-11-08 12:36:16,425 [INFO] Hospital_A: Training complete. Acc=0.7, Samples=120
+2025-11-08 12:36:20,699 [INFO] Hospital_A: Training complete. Acc=0.767, Samples=120
+2025-11-08 12:36:22,811 [INFO] Hospital_A: Training complete. Acc=0.667, Samples=120
+2025-11-08 12:36:24,627 [INFO] Hospital_A: Training complete. Acc=0.867, Samples=120
+2025-11-08 12:36:25,620 [INFO] Hospital_A: Training complete. Acc=0.733, Samples=120
+2025-11-08 12:36:33,741 [INFO] Hospital_A: Training complete. Acc=0.933, Samples=120
+2025-11-08 12:36:35,600 [INFO] Hospital_A: Training complete. Acc=0.7, Samples=120
+2025-11-08 12:49:59,770 [INFO] Hospital_A: Training complete. Acc=0.633, Samples=120
+2025-11-08 12:50:04,168 [INFO] Hospital_A: Training complete. Acc=0.9, Samples=120
+2025-11-08 12:50:08,123 [INFO] Hospital_A: Training complete. Acc=0.733, Samples=120
+2025-11-08 12:59:41,260 [INFO] Hospital_A: Training complete. Acc=0.833, Samples=120
+2025-11-08 12:59:45,767 [INFO] Hospital_A: Training complete. Acc=0.6, Samples=120
+2025-11-08 12:59:49,136 [INFO] Hospital_A: Training complete. Acc=0.733, Samples=120
+2025-11-08 13:11:13,015 [INFO] Hospital_A: Training complete. Acc=0.633, Samples=120
+2025-11-08 13:11:29,494 [INFO] Hospital_A: Training complete. Acc=0.833, Samples=120
+2025-11-08 13:11:32,442 [INFO] Hospital_A: Training complete. Acc=0.733, Samples=120
+2025-11-08 15:43:32,011 [INFO] Hospital_A: Training complete. Acc=0.5, Samples=120
+2025-11-08 15:43:34,395 [INFO] Hospital_A: Training complete. Acc=0.767, Samples=120
+2025-11-08 15:43:37,217 [INFO] Hospital_A: Training complete. Acc=0.767, Samples=120

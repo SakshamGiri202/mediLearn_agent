@@ -197,3 +197,154 @@
 2025-11-08 11:40:23,866 [INFO] Aggregation complete \u2192 Global accuracy: 0.697
 2025-11-08 11:40:28,965 [INFO] Aggregation complete \u2192 Global accuracy: 0.834
 2025-11-08 11:40:34,057 [INFO] Aggregation complete \u2192 Global accuracy: 0.742
+2025-11-08 12:29:39,785 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 12:30:20,134 [INFO] Aggregation complete \u2192 Global accuracy: 0.722
+2025-11-08 12:30:26,827 [INFO] Aggregation complete \u2192 Global accuracy: 0.694
+2025-11-08 12:30:33,349 [INFO] Aggregation complete \u2192 Global accuracy: 0.681
+2025-11-08 12:31:43,528 [INFO] Simulation started.
+2025-11-08 12:31:46,257 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:31:46,261 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:31:46,336 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:12,409 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.791
+2025-11-08 12:32:15,482 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:15,483 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:16,123 [INFO] Simulation started.
+2025-11-08 12:32:16,880 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:18,413 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:21,530 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.555
+2025-11-08 12:32:21,666 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:21,778 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:24,783 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:24,809 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:24,829 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.861
+2025-11-08 12:32:24,834 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:26,975 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.625
+2025-11-08 12:32:27,439 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:27,478 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:27,480 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:32:27,983 [INFO] Simulation completed successfully.
+2025-11-08 12:35:06,831 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 12:35:30,933 [INFO] Simulation started.
+2025-11-08 12:35:36,755 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:35:36,764 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:35:36,773 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:35:49,273 [INFO] Simulation started.
+2025-11-08 12:35:51,554 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:35:51,565 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:35:51,589 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:35:58,685 [INFO] Simulation started.
+2025-11-08 12:36:00,840 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:00,867 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:00,878 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:02,976 [INFO] Controller reset requested.
+2025-11-08 12:36:08,017 [INFO] Simulation started.
+2025-11-08 12:36:10,935 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:11,073 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:11,075 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:12,752 [WARNING] SHAP explanation skipped: main thread is not in main loop
+2025-11-08 12:36:12,804 [WARNING] SHAP explanation skipped: main thread is not in main loop
+2025-11-08 12:36:12,815 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.709
+2025-11-08 12:36:12,886 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.764
+2025-11-08 12:36:13,588 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.722
+2025-11-08 12:36:15,766 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.709
+2025-11-08 12:36:16,375 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:16,414 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:16,429 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:17,907 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:18,007 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:20,705 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:20,845 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.653
+2025-11-08 12:36:22,816 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:23,274 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:23,344 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:24,650 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:25,185 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:25,187 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:25,626 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:25,805 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:25,808 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:30,212 [WARNING] SHAP explanation skipped: main thread is not in main loop
+2025-11-08 12:36:30,250 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.805
+2025-11-08 12:36:30,871 [WARNING] SHAP explanation skipped: main thread is not in main loop
+2025-11-08 12:36:30,917 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.806
+2025-11-08 12:36:31,149 [WARNING] SHAP explanation skipped: main thread is not in main loop
+2025-11-08 12:36:31,494 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.805
+2025-11-08 12:36:32,502 [INFO] Simulation completed successfully.
+2025-11-08 12:36:33,656 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:33,707 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:33,745 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:35,588 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:35,588 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:35,609 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:36:38,625 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.778
+2025-11-08 12:36:39,640 [INFO] Simulation completed successfully.
+2025-11-08 12:36:39,739 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.778
+2025-11-08 12:36:40,786 [INFO] Simulation completed successfully.
+2025-11-08 12:45:35,575 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 12:49:57,011 [INFO] Simulation started.
+2025-11-08 12:49:59,796 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:49:59,804 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:49:59,809 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:50:01,933 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.764
+2025-11-08 12:50:04,156 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:50:04,169 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:50:04,171 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:50:05,839 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.778
+2025-11-08 12:50:08,126 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:50:08,127 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:50:08,129 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:50:09,674 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.653
+2025-11-08 12:50:10,675 [INFO] Simulation completed successfully.
+2025-11-08 12:59:39,717 [INFO] Simulation started.
+2025-11-08 12:59:41,261 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:41,266 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:41,272 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:42,825 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.778
+2025-11-08 12:59:45,769 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:45,877 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:45,883 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:47,214 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.708
+2025-11-08 12:59:49,136 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:49,157 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:49,187 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 12:59:50,574 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.722
+2025-11-08 12:59:51,575 [INFO] Simulation completed successfully.
+2025-11-08 13:10:41,868 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 13:11:11,540 [INFO] Simulation triggered via /start
+2025-11-08 13:11:11,560 [INFO] Simulation started \u2192 hospitals=3 cycles=3
+2025-11-08 13:11:13,019 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:13,019 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:13,019 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:27,355 [INFO] \u2705 Cycle 1 complete \u2192 Global Accuracy: 0.708
+2025-11-08 13:11:29,475 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:29,495 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:29,517 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:30,561 [INFO] \u2705 Cycle 2 complete \u2192 Global Accuracy: 0.805
+2025-11-08 13:11:32,446 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:32,459 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:32,460 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 13:11:33,890 [INFO] \u2705 Cycle 3 complete \u2192 Global Accuracy: 0.764
+2025-11-08 13:11:34,895 [INFO] Simulation completed successfully.
+2025-11-08 13:12:40,355 [INFO] Prediction: Negative (No Disease) — 79.1% Confidence
+2025-11-08 13:19:54,307 [INFO] Prediction: Negative (No Disease) — 75.3% Confidence
+2025-11-08 13:20:04,167 [INFO] Prediction: Negative (No Disease) — 81.4% Confidence
+2025-11-08 13:20:09,784 [INFO] Prediction: Negative (No Disease) — 66.3% Confidence
+2025-11-08 13:20:14,008 [INFO] Prediction: Negative (No Disease) — 78.6% Confidence
+2025-11-08 13:20:18,215 [INFO] Prediction: Negative (No Disease) — 74.3% Confidence
+2025-11-08 13:20:22,397 [INFO] Prediction: Negative (No Disease) — 87.5% Confidence
+2025-11-08 13:22:58,775 [INFO] Prediction: Negative (No Disease) — 62.1% Confidence
+2025-11-08 15:39:00,427 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 15:43:29,732 [INFO] Simulation triggered via /start
+2025-11-08 15:43:32,025 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 15:43:32,027 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 15:43:32,050 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 15:43:34,384 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 15:43:34,393 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 15:43:34,399 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 15:43:37,194 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 15:43:37,215 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 15:43:37,219 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 15:53:19,170 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 16:02:45,752 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 16:13:23,000 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 16:15:30,902 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
