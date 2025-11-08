@@ -1,14 +1,12 @@
+# backend/server_main.py
 import logging, json, os, asyncio, time, httpx
 from datetime import datetime
-from fastapi import FastAPI, BackgroundTasks, HTTPException
+from fastapi import FastAPI, BackgroundTasks, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 import numpy as np
 
-# ------------------------------
-# 🧱 INITIAL SETUP
-# ------------------------------
-app = FastAPI(title="🧠 MediLearn Controller (FedAvg + Async + Configurable)")
+app = FastAPI(title="🧠 MediLearn Controller (FedAvg + Async Upgrade)")
 
 app.add_middleware(
     CORSMiddleware,
@@ -22,76 +20,59 @@ STATUS_FILE = "latest_status.json"
 HISTORY_FILE = "training_history.json"
 GLOBAL_MODEL_FILE = "global_model.json"
 CONFIG_FILE = "agent_config.json"
-AGENT_LOG = "agent_log.json"
 
-# Default configuration
-CYCLE_COUNT = 3
-HOSPITALS = [
-    "http://127.0.0.1:8001/train",
-    "http://127.0.0.1:8002/train",
-    "http://127.0.0.1:8003/train"
-]
-
-# Logging setup
 logging.basicConfig(
     filename=LOG_FILE,
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
 )
-logging.info("=== MediLearn Controller Initialized (FedAvg + Async + Configurable) ===")
+logging.info("=== MediLearn Controller Initialized (FedAvg + Async Upgrade) ===")
 
-# ------------------------------
-# ⚙️ CONFIG UTILITIES
-# ------------------------------
-def load_config():
-    global CYCLE_COUNT, HOSPITALS
-    if os.path.exists(CONFIG_FILE):
-        with open(CONFIG_FILE, "r") as f:
-            cfg = json.load(f)
-        CYCLE_COUNT = cfg.get("cycles", 3)
-        HOSPITALS[:] = cfg.get("hospitals", HOSPITALS)
-        logging.info(f"Loaded dynamic config → cycles={CYCLE_COUNT}, hospitals={len(HOSPITALS)}")
-
-def save_status(data):
-    with open(STATUS_FILE, "w") as f:
+# -----------------------------
+# ⚙️ Helper Functions
+# -----------------------------
+def save_json(path, data):
+    with open(path, "w") as f:
         json.dump(data, f, indent=2)
 
-def log_history(entry):
+def append_history(entry):
     history = []
     if os.path.exists(HISTORY_FILE):
         try:
             with open(HISTORY_FILE, "r") as f:
                 history = json.load(f)
-        except json.JSONDecodeError:
+        except:
             history = []
     history.append(entry)
-    with open(HISTORY_FILE, "w") as f:
-        json.dump(history, f, indent=2)
+    save_json(HISTORY_FILE, history)
 
-def log_agent_action(cycle, action):
-    log = []
-    if os.path.exists(AGENT_LOG):
+def load_config():
+    """Load dynamic configuration from JSON."""
+    default_hospitals = [
+        "http://127.0.0.1:8001/train",
+        "http://127.0.0.1:8002/train",
+        "http://127.0.0.1:8003/train"
+    ]
+    if os.path.exists(CONFIG_FILE):
         try:
-            with open(AGENT_LOG, "r") as f:
-                log = json.load(f)
-        except json.JSONDecodeError:
-            log = []
-    log.append({"cycle": cycle, "action": action, "time": datetime.now().strftime("%H:%M:%S")})
-    with open(AGENT_LOG, "w") as f:
-        json.dump(log, f, indent=2)
+            with open(CONFIG_FILE, "r") as f:
+                cfg = json.load(f)
+            hospitals = cfg.get("hospitals", default_hospitals)
+            cycles = cfg.get("cycles", 3)
+            return hospitals, cycles
+        except:
+            pass
+    return default_hospitals, 3
 
-# ------------------------------
-# 🧠 FEDERATED AVERAGING HELPERS
-# ------------------------------
 def aggregate_fedavg(results):
-    total_samples = sum(r.get("samples", 0) for r in results if r)
-    if total_samples == 0:
+    total = sum(r.get("samples", 0) for r in results if r.get("samples"))
+    if total == 0:
         return 0.0
-    weighted_sum = sum(r["accuracy"] * r["samples"] for r in results if r)
-    return round(weighted_sum / total_samples, 3)
+    weighted = sum(r["accuracy"] * r["samples"] for r in results if r.get("samples"))
+    return round(weighted / total, 3)
 
 def aggregate_model_weights(results):
-    valid = [r for r in results if "weights" in r]
+    valid = [r for r in results if r.get("weights")]
     if not valid:
         return None
     coefs = [np.array(r["weights"][0]) for r in valid]
@@ -100,24 +81,18 @@ def aggregate_model_weights(results):
     avg_intercept = np.mean(intercepts, axis=0).tolist()
     return [avg_coef, avg_intercept]
 
-def save_global_model(weights):
-    if weights:
-        with open(GLOBAL_MODEL_FILE, "w") as f:
-            json.dump(weights, f)
-        logging.info("✅ Global model weights updated and saved.")
-
 def load_global_model():
     if os.path.exists(GLOBAL_MODEL_FILE):
         with open(GLOBAL_MODEL_FILE, "r") as f:
             return json.load(f)
     return None
 
-# ------------------------------
-# ⚙️ ASYNC TRAINING
-# ------------------------------
-async def train_all_hospitals(global_weights):
+# -----------------------------
+# ⚙️ Async Training Logic
+# -----------------------------
+async def train_all_hospitals(hospitals, global_weights):
     async with httpx.AsyncClient() as client:
-        tasks = [client.post(url, json={"global_weights": global_weights}, timeout=15) for url in HOSPITALS]
+        tasks = [client.post(url, json={"global_weights": global_weights}, timeout=15) for url in hospitals]
         responses = await asyncio.gather(*tasks, return_exceptions=True)
 
     results = []
@@ -125,70 +100,90 @@ async def train_all_hospitals(global_weights):
         if isinstance(res, Exception):
             results.append({"hospital": f"Hospital_{chr(65+i)}", "error": str(res)})
         else:
-            results.append(res.json())
+            try:
+                results.append(res.json())
+            except:
+                results.append({"hospital": f"Hospital_{chr(65+i)}", "error": "Invalid response"})
     return results
 
-# ------------------------------
-# 🔁 MAIN SIMULATION LOOP
-# ------------------------------
+# -----------------------------
+# 🔁 Main Simulation
+# -----------------------------
 def simulate_agent_cycle():
-    load_config()
+    hospitals, cycles = load_config()
     global_weights = load_global_model()
-    print("🧠 MediLearn Agent Simulation Started (Async + Global Weights)")
-    logging.info("Simulation started by /start")
+    print(f"🧠 MediLearn Simulation Started → Hospitals: {len(hospitals)} | Cycles: {cycles}")
+    logging.info("Simulation started.")
 
     global_data = {"hospitals": [], "global_accuracy": 0.0, "cycle": 0}
 
-    for cycle in range(1, CYCLE_COUNT + 1):
+    for cycle in range(1, cycles + 1):
         print(f"\n🚀 Cycle {cycle} started...")
-        log_agent_action(cycle, f"Starting cycle {cycle}")
-
-        results = asyncio.run(train_all_hospitals(global_weights))
+        try:
+            results = asyncio.run(train_all_hospitals(hospitals, global_weights))
+        except Exception as e:
+            logging.error(f"Cycle {cycle} failed: {e}")
+            continue
 
         global_accuracy = aggregate_fedavg(results)
         new_global_weights = aggregate_model_weights(results)
-        save_global_model(new_global_weights)
+        if new_global_weights:
+            save_json(GLOBAL_MODEL_FILE, new_global_weights)
 
         global_data.update({
+            "cycle": cycle,
             "global_accuracy": global_accuracy,
             "hospitals": results,
-            "cycle": cycle,
             "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         })
 
-        save_status(global_data)
-        log_history(global_data)
-
-        logging.info(f"Cycle {cycle} → Global Accuracy: {global_accuracy}")
-        log_agent_action(cycle, f"Completed cycle {cycle} with acc={global_accuracy}")
+        save_json(STATUS_FILE, global_data)
+        append_history(global_data)
+        logging.info(f"Cycle {cycle} complete → Global Accuracy: {global_accuracy}")
 
         global_weights = new_global_weights
         time.sleep(1)
 
-    print("✅ Simulation completed successfully!")
+    print("\n✅ Simulation completed successfully!")
     logging.info("Simulation completed successfully.")
 
-# ------------------------------
+# -----------------------------
 # 🌐 API ROUTES
-# ------------------------------
+# -----------------------------
+@app.post("/aggregate")
+async def aggregate_endpoint(request: Request):
+    payload = await request.json()
+    results = payload.get("results", [])
+    if not results:
+        raise HTTPException(status_code=400, detail="No results provided.")
+
+    global_accuracy = aggregate_fedavg(results)
+    new_global_weights = aggregate_model_weights(results)
+    if new_global_weights:
+        save_json(GLOBAL_MODEL_FILE, new_global_weights)
+
+    status = {
+        "cycle": len(results),
+        "global_accuracy": global_accuracy,
+        "hospitals": results,
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    }
+    save_json(STATUS_FILE, status)
+    append_history(status)
+    logging.info(f"Aggregation complete → Global accuracy: {global_accuracy}")
+    return JSONResponse({"message": "Aggregation complete", "global_accuracy": global_accuracy})
+
 @app.post("/start")
 def start_simulation(background_tasks: BackgroundTasks):
     background_tasks.add_task(simulate_agent_cycle)
-    return {"message": "🚀 MediLearn Agent simulation started."}
-
-@app.post("/config")
-def update_config(cfg: dict):
-    with open(CONFIG_FILE, "w") as f:
-        json.dump(cfg, f, indent=2)
-    load_config()
-    return {"message": "✅ Config updated.", "config": cfg}
+    return {"message": "🚀 Simulation started (Async Aggregator)"}
 
 @app.get("/status")
 def get_status():
     if os.path.exists(STATUS_FILE):
         with open(STATUS_FILE, "r") as f:
             return json.load(f)
-    raise HTTPException(404, "No training data yet. Run /start first.")
+    return {"message": "No training data yet. Run agent to start."}
 
 @app.get("/history")
 def get_history():
@@ -202,14 +197,7 @@ def get_global_model():
     if os.path.exists(GLOBAL_MODEL_FILE):
         with open(GLOBAL_MODEL_FILE, "r") as f:
             return json.load(f)
-    return {"message": "No global weights yet."}
-
-@app.get("/agent_log")
-def get_agent_log():
-    if os.path.exists(AGENT_LOG):
-        with open(AGENT_LOG, "r") as f:
-            return json.load(f)
-    return []
+    return {"message": "No global model yet."}
 
 @app.get("/stream")
 async def stream_status():
@@ -221,18 +209,18 @@ async def stream_status():
             await asyncio.sleep(2)
     return StreamingResponse(event_stream(), media_type="text/event-stream")
 
+@app.get("/health")
+def health():
+    return {"status": "MediLearn Controller Active ✅", "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+
 @app.post("/reset")
 def reset():
-    for file in [STATUS_FILE, HISTORY_FILE, GLOBAL_MODEL_FILE, CONFIG_FILE, AGENT_LOG]:
-        if os.path.exists(file):
-            os.remove(file)
-    logging.info("Simulation reset.")
-    return {"message": "🧹 Simulation reset successfully."}
-
-@app.get("/health")
-def health_check():
-    return {"status": "🧠 MediLearn Controller Active ✅", "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+    for p in [STATUS_FILE, HISTORY_FILE, GLOBAL_MODEL_FILE]:
+        if os.path.exists(p):
+            os.remove(p)
+    logging.info("Controller reset requested.")
+    return {"message": "🧹 Reset complete"}
 
 @app.get("/")
 def home():
-    return {"status": "MediLearn Controller 🩺", "version": "4.0 (Async + Configurable + FedAvg)"}
+    return {"status": "MediLearn Aggregator 🩺", "version": "4.0 (Async Upgrade FedAvg)"}

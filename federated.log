@@ -117,3 +117,38 @@
 2025-11-08 06:01:40,211 [INFO] \u2705 Global model weights updated and saved.
 2025-11-08 06:01:40,226 [INFO] Cycle 3 \u2192 Global Accuracy: 0.788
 2025-11-08 06:01:41,239 [INFO] Simulation completed successfully.
+2025-11-08 07:42:52,583 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 07:44:32,266 [INFO] Simulation started.
+2025-11-08 07:44:32,976 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:32,978 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:32,978 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:33,011 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.758
+2025-11-08 07:44:34,493 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:34,495 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:34,495 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:34,519 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.788
+2025-11-08 07:44:35,981 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:35,981 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:35,981 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-08 07:44:36,010 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.727
+2025-11-08 07:44:37,015 [INFO] Simulation completed successfully.
+2025-11-08 07:46:44,673 [INFO] Aggregation complete \u2192 Global accuracy: 0.743
+2025-11-08 07:46:49,772 [INFO] Aggregation complete \u2192 Global accuracy: 0.743
+2025-11-08 07:46:54,860 [INFO] Aggregation complete \u2192 Global accuracy: 0.743
+2025-11-08 08:21:57,912 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:24:20,060 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:24:37,110 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:25:26,568 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:25:46,443 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:26:58,486 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:27:09,138 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:27:16,275 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:30:57,157 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:33:24,458 [INFO] Aggregation complete \u2192 Global accuracy: 0.576
+2025-11-08 08:33:29,534 [INFO] Aggregation complete \u2192 Global accuracy: 0.576
+2025-11-08 08:33:34,619 [INFO] Aggregation complete \u2192 Global accuracy: 0.576
+2025-11-08 08:39:14,004 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:40:38,741 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:41:29,613 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:43:00,594 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 08:43:12,270 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===

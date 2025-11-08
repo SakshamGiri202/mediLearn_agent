@@ -1,34 +1,36 @@
+# backend/hospital_A.py
+import json
 from fastapi import FastAPI, Request
-from datetime import datetime
-import sys, os
-
-# Add ml_core to Python path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from fastapi.middleware.cors import CORSMiddleware
 from ml_core.train_local import train_on_local_data
+from datetime import datetime
 
-app = FastAPI(title="🏥 Hospital A API (Federated Node)")
+app = FastAPI(title="🏥 Hospital A - Heart Disease Training Node")
 
-DATASET_NAME = "heart_disease.csv"  # Local dataset for Hospital A
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/train")
 async def train_model(request: Request):
-    """Local training endpoint — accepts optional global weights."""
-    body = await request.json()
-    global_weights = body.get("global_weights")  # from controller, may be None first round
+    """Train model on Hospital A’s local heart disease dataset."""
+    payload = await request.json()
+    global_weights = payload.get("global_weights", None)
 
-    local_weights, accuracy, samples = train_on_local_data(DATASET_NAME, global_weights)
-
+    local_weights, accuracy, samples = train_on_local_data("heart_disease.csv", global_weights)
     result = {
         "hospital": "Hospital_A",
-        "accuracy": round(float(accuracy), 3),
-        "samples": int(samples),
+        "dataset": "heart_disease.csv",
+        "accuracy": accuracy,
+        "samples": samples,
         "weights": local_weights,
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
     return result
 
-
-@app.get("/")
-def home():
-    return {"status": "Hospital A Node active ✅"}
+@app.get("/health")
+def health_check():
+    return {"status": "Hospital A active ✅"}
