@@ -1,0 +1,14 @@
+2025-11-09 01:11:41,826 [INFO] \U0001f3e5 Hospital_6 initialized on dataset stroke.csv
+2025-11-09 01:11:41,982 [INFO] \U0001f680 Starting Hospital_6 on port 8007
+2025-11-09 01:11:49,380 [INFO] Hospital_6: Training complete (Acc=0.667, Samples=72)
+2025-11-09 01:11:54,011 [INFO] Hospital_6: Training complete (Acc=0.722, Samples=72)
+2025-11-09 01:12:01,512 [INFO] Hospital_6: Training complete (Acc=0.667, Samples=72)
+2025-11-09 01:21:20,407 [INFO] Hospital_6: Training complete (Acc=0.611, Samples=72)
+2025-11-09 01:21:24,898 [INFO] Hospital_6: Training complete (Acc=0.833, Samples=72)
+2025-11-09 01:21:27,836 [INFO] Hospital_6: Training complete (Acc=0.722, Samples=72)
+2025-11-09 01:21:32,352 [INFO] Hospital_6: Training complete (Acc=0.722, Samples=72)
+2025-11-09 01:21:34,952 [INFO] Hospital_6: Training complete (Acc=0.778, Samples=72)
+2025-11-09 01:21:39,850 [INFO] Hospital_6: Training complete (Acc=0.667, Samples=72)
+2025-11-09 01:39:05,093 [INFO] Hospital_6: Training complete (Acc=0.833, Samples=72)
+2025-11-09 01:39:08,745 [INFO] Hospital_6: Training complete (Acc=1.0, Samples=72)
+2025-11-09 01:39:13,452 [INFO] Hospital_6: Training complete (Acc=0.556, Samples=72)

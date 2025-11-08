@@ -1,0 +1,162 @@
+2025-11-09 00:03:35,095 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:03:37,104 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:03:38,715 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:03:40,069 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:03:41,927 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:03:43,169 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:08:58,952 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:09:05,299 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:09:10,080 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:18:10,323 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:18:18,589 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:18:23,955 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:21:24,729 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:21:29,739 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:21:34,630 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:29:22,495 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:29:25,817 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:29:29,033 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:34:52,678 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:34:59,257 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:35:03,434 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:36:36,733 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:36:40,986 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:36:44,746 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:40:18,425 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:40:21,265 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-09 00:40:25,328 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_XYZ_Hospital.py", line 33, in train
+    weights, accuracy, samples = train_on_local_data(dataset, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)

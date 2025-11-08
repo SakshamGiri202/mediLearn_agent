@@ -64,3 +64,6 @@ ValueError: too many values to unpack (expected 3)
 2025-11-08 15:43:32,011 [INFO] Hospital_A: Training complete. Acc=0.5, Samples=120
 2025-11-08 15:43:34,395 [INFO] Hospital_A: Training complete. Acc=0.767, Samples=120
 2025-11-08 15:43:37,217 [INFO] Hospital_A: Training complete. Acc=0.767, Samples=120
+2025-11-08 22:55:34,503 [INFO] \U0001f3e5 Hospital_A initialized on dataset heart_disease.csv
+2025-11-08 23:45:25,608 [INFO] \U0001f3e5 Hospital_A initialized on dataset heart_disease.csv
+2025-11-08 23:54:37,259 [INFO] \U0001f3e5 Hospital_A initialized on dataset heart_disease.csv

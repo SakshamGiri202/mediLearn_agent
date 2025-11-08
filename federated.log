@@ -348,3 +348,356 @@
 2025-11-08 16:02:45,752 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
 2025-11-08 16:13:23,000 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
 2025-11-08 16:15:30,902 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 22:56:20,518 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 23:08:28,506 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 23:20:42,491 [INFO] Simulation triggered via /start
+2025-11-08 23:20:42,792 [INFO] Simulation started \u2192 hospitals=2 cycles=3
+2025-11-08 23:20:46,527 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:20:46,527 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:20:46,580 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:20:50,646 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:20:50,646 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:20:50,828 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:20:54,366 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:20:54,366 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:20:54,402 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:20:55,403 [INFO] Simulation completed successfully.
+2025-11-08 23:24:23,630 [INFO] Simulation triggered via /start
+2025-11-08 23:24:23,702 [INFO] Simulation started \u2192 hospitals=2 cycles=3
+2025-11-08 23:24:26,291 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:24:26,291 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:24:26,312 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:24:30,104 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:24:30,104 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:24:30,119 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:24:33,528 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:24:33,528 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:24:33,533 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:24:34,541 [INFO] Simulation completed successfully.
+2025-11-08 23:28:08,975 [INFO] Simulation triggered via /start
+2025-11-08 23:28:09,014 [INFO] Simulation started \u2192 hospitals=2 cycles=3
+2025-11-08 23:28:11,653 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:28:11,653 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:28:11,669 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:28:15,146 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:28:15,146 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:28:15,392 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:28:20,158 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:28:20,158 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:28:20,574 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:28:21,591 [INFO] Simulation completed successfully.
+2025-11-08 23:36:02,332 [INFO] Simulation triggered via /start
+2025-11-08 23:36:02,433 [INFO] Simulation started \u2192 hospitals=2 cycles=3
+2025-11-08 23:36:04,983 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:36:04,983 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:36:05,004 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:36:10,423 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:36:10,423 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:36:10,440 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:36:13,959 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:36:13,959 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:36:13,993 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:36:14,996 [INFO] Simulation completed successfully.
+2025-11-08 23:40:40,451 [INFO] Simulation triggered via /start
+2025-11-08 23:40:40,509 [INFO] Simulation started \u2192 hospitals=2 cycles=3
+2025-11-08 23:40:43,243 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:40:43,243 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:40:43,258 [INFO] Cycle 1 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:40:46,826 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:40:46,826 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:40:46,841 [INFO] Cycle 2 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:40:50,564 [ERROR] Hospital_A call failed: All connection attempts failed
+2025-11-08 23:40:50,564 [ERROR] Hospital_B call failed: All connection attempts failed
+2025-11-08 23:40:50,585 [INFO] Cycle 3 complete \u2192 Global Accuracy: 0.0
+2025-11-08 23:40:51,586 [INFO] Simulation completed successfully.
+2025-11-08 23:45:53,863 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 23:55:11,081 [INFO] === MediLearn Controller Initialized (FedAvg + Reliable Connectivity) ===
+2025-11-08 23:56:28,167 [INFO] \U0001f9e0 Simulation started with 2 hospitals × 3 cycles
+2025-11-08 23:56:28,171 [INFO] \U0001f680 Cycle 1 started
+2025-11-08 23:56:30,939 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 1/5)...
+2025-11-08 23:56:35,369 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 2/5)...
+2025-11-08 23:56:39,669 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 3/5)...
+2025-11-08 23:56:43,984 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 4/5)...
+2025-11-08 23:56:48,286 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 5/5)...
+2025-11-08 23:56:50,301 [ERROR] \u274c http://127.0.0.1:8004/health not reachable.
+2025-11-08 23:56:50,301 [WARNING] Skipping http://127.0.0.1:8004/train (not ready)
+2025-11-08 23:56:52,648 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 1/5)...
+2025-11-08 23:56:57,024 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 2/5)...
+2025-11-08 23:57:01,469 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 3/5)...
+2025-11-08 23:57:06,161 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 4/5)...
+2025-11-08 23:57:10,756 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 5/5)...
+2025-11-08 23:57:12,771 [ERROR] \u274c http://127.0.0.1:8005/health not reachable.
+2025-11-08 23:57:12,774 [WARNING] Skipping http://127.0.0.1:8005/train (not ready)
+2025-11-08 23:57:12,774 [ERROR] No hospitals available.
+2025-11-08 23:57:12,796 [INFO] \u2705 Cycle 1 complete \u2192 Accuracy: 0.0
+2025-11-08 23:57:13,797 [INFO] \U0001f680 Cycle 2 started
+2025-11-08 23:57:16,221 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 1/5)...
+2025-11-08 23:57:20,589 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 2/5)...
+2025-11-08 23:57:24,952 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 3/5)...
+2025-11-08 23:57:29,304 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 4/5)...
+2025-11-08 23:57:33,669 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 5/5)...
+2025-11-08 23:57:35,676 [ERROR] \u274c http://127.0.0.1:8004/health not reachable.
+2025-11-08 23:57:35,678 [WARNING] Skipping http://127.0.0.1:8004/train (not ready)
+2025-11-08 23:57:38,063 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 1/5)...
+2025-11-08 23:57:42,544 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 2/5)...
+2025-11-08 23:57:47,093 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 3/5)...
+2025-11-08 23:57:51,507 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 4/5)...
+2025-11-08 23:57:56,075 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 5/5)...
+2025-11-08 23:57:58,085 [ERROR] \u274c http://127.0.0.1:8005/health not reachable.
+2025-11-08 23:57:58,113 [WARNING] Skipping http://127.0.0.1:8005/train (not ready)
+2025-11-08 23:57:58,143 [ERROR] No hospitals available.
+2025-11-08 23:57:58,924 [INFO] \u2705 Cycle 2 complete \u2192 Accuracy: 0.0
+2025-11-08 23:57:59,945 [INFO] \U0001f680 Cycle 3 started
+2025-11-08 23:58:02,967 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 1/5)...
+2025-11-08 23:58:07,533 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 2/5)...
+2025-11-08 23:58:11,904 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 3/5)...
+2025-11-08 23:58:16,269 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 4/5)...
+2025-11-08 23:58:21,608 [WARNING] \u23f3 Waiting for http://127.0.0.1:8004/health (retry 5/5)...
+2025-11-08 23:58:23,615 [ERROR] \u274c http://127.0.0.1:8004/health not reachable.
+2025-11-08 23:58:23,620 [WARNING] Skipping http://127.0.0.1:8004/train (not ready)
+2025-11-08 23:58:26,066 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 1/5)...
+2025-11-08 23:58:30,473 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 2/5)...
+2025-11-08 23:58:34,889 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 3/5)...
+2025-11-08 23:58:39,309 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 4/5)...
+2025-11-08 23:58:43,823 [WARNING] \u23f3 Waiting for http://127.0.0.1:8005/health (retry 5/5)...
+2025-11-08 23:58:45,829 [ERROR] \u274c http://127.0.0.1:8005/health not reachable.
+2025-11-08 23:58:45,833 [WARNING] Skipping http://127.0.0.1:8005/train (not ready)
+2025-11-08 23:58:45,833 [ERROR] No hospitals available.
+2025-11-08 23:58:45,909 [INFO] \u2705 Cycle 3 complete \u2192 Accuracy: 0.0
+2025-11-08 23:58:46,910 [INFO] \U0001f3af Simulation completed successfully!
+2025-11-09 00:03:19,888 [INFO] === MediLearn Controller Initialized (FedAvg + Reliable Connectivity) ===
+2025-11-09 00:03:30,210 [INFO] \U0001f9e0 Simulation started with 2 hospitals × 3 cycles
+2025-11-09 00:03:30,212 [INFO] \U0001f680 Cycle 1 started
+2025-11-09 00:03:30,833 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:30,835 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:03:31,279 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:31,280 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:03:34,023 [INFO] \U0001f9e0 Simulation started with 2 hospitals × 3 cycles
+2025-11-09 00:03:34,028 [INFO] \U0001f680 Cycle 1 started
+2025-11-09 00:03:35,095 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:35,103 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:35,108 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:35,110 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:03:35,161 [INFO] \u2705 Cycle 1 complete \u2192 Accuracy: 0.0
+2025-11-09 00:03:35,723 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:35,723 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:03:36,162 [INFO] \U0001f680 Cycle 2 started
+2025-11-09 00:03:37,108 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:37,119 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:37,135 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:37,137 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:03:37,198 [INFO] \u2705 Cycle 1 complete \u2192 Accuracy: 0.0
+2025-11-09 00:03:37,828 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:37,828 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:03:38,199 [INFO] \U0001f680 Cycle 2 started
+2025-11-09 00:03:38,689 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:38,717 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:38,744 [INFO] \u2705 Cycle 2 complete \u2192 Accuracy: 0.0
+2025-11-09 00:03:38,756 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:38,756 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:03:39,146 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:39,146 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:03:39,754 [INFO] \U0001f680 Cycle 3 started
+2025-11-09 00:03:40,071 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:40,075 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:40,112 [INFO] \u2705 Cycle 2 complete \u2192 Accuracy: 0.0
+2025-11-09 00:03:40,272 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:40,274 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:03:40,769 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:40,772 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:03:41,113 [INFO] \U0001f680 Cycle 3 started
+2025-11-09 00:03:41,931 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:41,947 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:41,952 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:41,952 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:03:42,002 [INFO] \u2705 Cycle 3 complete \u2192 Accuracy: 0.0
+2025-11-09 00:03:42,375 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:03:42,375 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:03:43,004 [INFO] \U0001f3af Simulation completed successfully!
+2025-11-09 00:03:43,173 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:43,174 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:03:43,200 [INFO] \u2705 Cycle 3 complete \u2192 Accuracy: 0.0
+2025-11-09 00:03:44,202 [INFO] \U0001f3af Simulation completed successfully!
+2025-11-09 00:08:15,119 [INFO] === MediLearn Controller Initialized (FedAvg + Reliable Connectivity) ===
+2025-11-09 00:08:48,337 [INFO] \U0001f9e0 Simulation started with 5 hospitals × 3 cycles
+2025-11-09 00:08:48,339 [INFO] \U0001f680 Cycle 1 started
+2025-11-09 00:08:49,068 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:08:49,070 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:08:49,632 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:08:49,632 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:08:50,140 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:08:50,140 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:08:50,696 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:08:50,696 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:08:51,250 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:08:51,250 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:08:58,965 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:08:59,167 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:08:59,401 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:08:59,458 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:08:59,556 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:00,254 [INFO] \u2705 Cycle 1 complete \u2192 Accuracy: 0.861
+2025-11-09 00:09:01,255 [INFO] \U0001f680 Cycle 2 started
+2025-11-09 00:09:02,000 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:02,005 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:09:02,613 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:02,614 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:09:03,027 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:03,028 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:09:03,477 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:03,481 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:09:03,880 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:03,882 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:09:05,243 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:05,271 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:05,284 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:05,299 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:05,302 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:05,640 [INFO] \u2705 Cycle 2 complete \u2192 Accuracy: 0.625
+2025-11-09 00:09:06,642 [INFO] \U0001f680 Cycle 3 started
+2025-11-09 00:09:07,112 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:07,112 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:09:07,530 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:07,530 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:09:07,869 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:07,874 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:09:08,288 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:08,290 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:09:08,728 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:09:08,730 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:09:10,057 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:10,083 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:10,085 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:10,098 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:10,101 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:09:10,339 [INFO] \u2705 Cycle 3 complete \u2192 Accuracy: 0.847
+2025-11-09 00:09:11,341 [INFO] \U0001f3af Simulation completed successfully!
+2025-11-09 00:17:58,234 [INFO] \U0001f9f9 Reset complete
+2025-11-09 00:18:03,297 [INFO] \U0001f9e0 Simulation started with 5 hospitals × 3 cycles
+2025-11-09 00:18:03,299 [INFO] \U0001f680 Cycle 1 started
+2025-11-09 00:18:04,451 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:04,463 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:18:05,524 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:05,526 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:18:06,061 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:06,065 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:18:06,626 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:06,628 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:18:07,300 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:07,301 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:18:10,290 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:10,305 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:10,345 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:10,411 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:10,509 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:11,023 [INFO] \u2705 Cycle 1 complete \u2192 Accuracy: 0.708
+2025-11-09 00:18:12,023 [INFO] \U0001f680 Cycle 2 started
+2025-11-09 00:18:12,488 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:12,488 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:18:12,933 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:12,936 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:18:13,377 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:13,378 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:18:13,894 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:13,896 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:18:14,535 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:14,535 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:18:18,619 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:18,653 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:18,772 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:18,790 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:18,814 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:19,105 [INFO] \u2705 Cycle 2 complete \u2192 Accuracy: 0.736
+2025-11-09 00:18:20,106 [INFO] \U0001f680 Cycle 3 started
+2025-11-09 00:18:20,496 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:20,499 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:18:20,864 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:20,865 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:18:21,281 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:21,285 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:18:21,794 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:21,806 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:18:22,643 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:18:22,647 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:18:23,945 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:23,959 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:23,963 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:23,965 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:23,972 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:18:24,238 [INFO] \u2705 Cycle 3 complete \u2192 Accuracy: 0.695
+2025-11-09 00:18:25,243 [INFO] \U0001f3af Simulation completed successfully!
+2025-11-09 00:21:19,808 [INFO] \U0001f9f9 Reset complete
+2025-11-09 00:21:19,897 [INFO] \U0001f9e0 Simulation started with 5 hospitals × 3 cycles
+2025-11-09 00:21:19,897 [INFO] \U0001f680 Cycle 1 started
+2025-11-09 00:21:20,628 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:20,628 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:21:21,272 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:21,273 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:21:21,830 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:21,833 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:21:22,471 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:22,471 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:21:22,967 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:22,967 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:21:24,733 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:24,738 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:24,741 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:24,749 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:24,756 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:25,012 [INFO] \u2705 Cycle 1 complete \u2192 Accuracy: 0.555
+2025-11-09 00:21:26,014 [INFO] \U0001f680 Cycle 2 started
+2025-11-09 00:21:26,447 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:26,447 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:21:26,880 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:26,882 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:21:27,399 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:27,400 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:21:27,856 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:27,856 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:21:28,215 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:28,217 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:21:29,726 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:29,736 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:29,741 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:29,765 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:29,773 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:30,023 [INFO] \u2705 Cycle 2 complete \u2192 Accuracy: 0.667
+2025-11-09 00:21:31,024 [INFO] \U0001f680 Cycle 3 started
+2025-11-09 00:21:31,455 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:31,457 [INFO] \u2705 http://127.0.0.1:8001/health is ready.
+2025-11-09 00:21:31,818 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:31,819 [INFO] \u2705 http://127.0.0.1:8002/health is ready.
+2025-11-09 00:21:32,401 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:32,402 [INFO] \u2705 http://127.0.0.1:8003/health is ready.
+2025-11-09 00:21:32,857 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:32,859 [INFO] \u2705 http://127.0.0.1:8004/health is ready.
+2025-11-09 00:21:33,217 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:21:33,218 [INFO] \u2705 http://127.0.0.1:8005/health is ready.
+2025-11-09 00:21:34,572 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:34,590 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:34,629 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:34,633 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:34,636 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:21:34,848 [INFO] \u2705 Cycle 3 complete \u2192 Accuracy: 0.847
+2025-11-09 00:21:35,850 [INFO] \U0001f3af Simulation completed successfully!
+2025-11-09 00:28:25,561 [INFO] === MediLearn Controller Initialized (Auto-Heal Enabled) ===
+2025-11-09 00:29:19,232 [INFO] HTTP Request: GET http://127.0.0.1:8001/health "HTTP/1.1 200 OK"
+2025-11-09 00:29:19,316 [INFO] HTTP Request: GET http://127.0.0.1:8002/health "HTTP/1.1 200 OK"
+2025-11-09 00:29:19,404 [INFO] HTTP Request: GET http://127.0.0.1:8003/health "HTTP/1.1 200 OK"
+2025-11-09 00:29:19,483 [INFO] HTTP Request: GET http://127.0.0.1:8004/health "HTTP/1.1 200 OK"
+2025-11-09 00:29:19,559 [INFO] HTTP Request: GET http://127.0.0.1:8005/health "HTTP/1.1 200 OK"
+2025-11-09 00:29:22,414 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:22,414 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:22,418 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:22,489 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:22,511 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:25,730 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:25,752 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:25,759 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:25,762 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:25,822 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:29,003 [INFO] HTTP Request: POST http://127.0.0.1:8001/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:29,021 [INFO] HTTP Request: POST http://127.0.0.1:8003/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:29,038 [INFO] HTTP Request: POST http://127.0.0.1:8002/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:29,040 [INFO] HTTP Request: POST http://127.0.0.1:8005/train "HTTP/1.1 200 OK"
+2025-11-09 00:29:29,047 [INFO] HTTP Request: POST http://127.0.0.1:8004/train "HTTP/1.1 200 OK"
