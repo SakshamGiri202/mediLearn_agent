@@ -3,12 +3,17 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
 
-# Fix imports so we can access ml_core
+# ------------------ Path Fix ------------------
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from ml_core.train_local import train_on_local_data
+from ml_core.train_local import train_on_local_data  # ✅ with DP + SHAP
+
+# ------------------ Hospital Identity ------------------
+os.environ["HOSPITAL_NAME"] = "Hospital_A"
+HOSPITAL_NAME = os.getenv("HOSPITAL_NAME")
+DATASET = "heart_disease.csv"
 
 # ------------------ FastAPI Setup ------------------
-app = FastAPI(title="Hospital A Local Training Node")
+app = FastAPI(title=f"{HOSPITAL_NAME} Local Node")
 
 app.add_middleware(
     CORSMiddleware,
@@ -18,47 +23,58 @@ app.add_middleware(
 )
 
 # ------------------ Logging ------------------
+LOG_FILE = f"{HOSPITAL_NAME}.log"
 logging.basicConfig(
-    filename="hospital_A.log",
+    filename=LOG_FILE,
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
 )
-
-DATASET = "heart_disease.csv"
+logging.info(f"🏥 {HOSPITAL_NAME} initialized on dataset {DATASET}")
 
 # ------------------ Routes ------------------
 @app.post("/train")
 async def train(request: Request):
-    """Receive global weights and train on local dataset."""
+    """
+    Receive global weights, perform local training with DP + explainability,
+    and return updated model weights with metadata.
+    """
     try:
         payload = await request.json()
         global_weights = payload.get("global_weights")
 
-        weights, accuracy, samples = train_on_local_data(DATASET, global_weights)
+        # ✅ Local training (includes DP + SHAP)
+        weights, accuracy, samples, feature_names = train_on_local_data(DATASET, global_weights)
 
-        # ✅ Build clean JSON-safe response
+        # ✅ Prepare structured response
         response = {
-            "hospital": "Hospital_A",
+            "hospital": HOSPITAL_NAME,
+            "dataset": DATASET,
             "accuracy": accuracy,
             "samples": samples,
             "weights": weights,
-            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            "feature_names": feature_names,
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         }
 
-        logging.info(f"Hospital A → Training done. Accuracy={accuracy}, Samples={samples}")
+        logging.info(f"{HOSPITAL_NAME}: Training complete. Acc={accuracy}, Samples={samples}")
         return response
 
     except Exception as e:
-        logging.error(f"Training error: {e}", exc_info=True)
-        return {"error": f"Training failed: {str(e)}"}
-
+        logging.error(f"Training failed: {e}", exc_info=True)
+        return {"error": f"{HOSPITAL_NAME} training failed: {str(e)}"}
 
 @app.get("/health")
 def health():
-    """Simple check for hospital status."""
-    return {"status": "Hospital A active ✅", "dataset": DATASET}
+    """Health check endpoint."""
+    return {
+        "status": f"{HOSPITAL_NAME} active ✅",
+        "dataset": DATASET,
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    }
 
-
+# ------------------ Main Run ------------------
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8001)
+    port = 8001
+    logging.info(f"🚀 Starting {HOSPITAL_NAME} server on port {port}")
+    uvicorn.run(app, host="127.0.0.1", port=port)

@@ -22,3 +22,6 @@ ValueError: too many values to unpack (expected 3)
 2025-11-08 11:12:29,740 [INFO] Hospital B \u2192 Training done. Accuracy=0.45
 2025-11-08 11:12:34,826 [INFO] Hospital B \u2192 Training done. Accuracy=0.45
 2025-11-08 11:12:39,910 [INFO] Hospital B \u2192 Training done. Accuracy=0.45
+2025-11-08 11:13:28,160 [INFO] Hospital B \u2192 Training done. Accuracy=0.6
+2025-11-08 11:13:33,257 [INFO] Hospital B \u2192 Training done. Accuracy=0.7
+2025-11-08 11:13:38,332 [INFO] Hospital B \u2192 Training done. Accuracy=0.75

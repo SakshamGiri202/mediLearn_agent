@@ -179,3 +179,17 @@
 2025-11-08 11:12:31,788 [INFO] Aggregation complete \u2192 Global accuracy: 0.576
 2025-11-08 11:12:36,877 [INFO] Aggregation complete \u2192 Global accuracy: 0.576
 2025-11-08 11:12:41,981 [INFO] Aggregation complete \u2192 Global accuracy: 0.576
+2025-11-08 11:13:19,803 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 11:13:30,230 [INFO] Aggregation complete \u2192 Global accuracy: 0.697
+2025-11-08 11:13:35,302 [INFO] Aggregation complete \u2192 Global accuracy: 0.727
+2025-11-08 11:13:40,376 [INFO] Aggregation complete \u2192 Global accuracy: 0.697
+2025-11-08 11:21:03,982 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 11:22:04,032 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 11:23:48,974 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 11:24:15,140 [INFO] Aggregation complete \u2192 Global accuracy: 0.803
+2025-11-08 11:24:20,225 [INFO] Aggregation complete \u2192 Global accuracy: 0.667
+2025-11-08 11:24:25,313 [INFO] Aggregation complete \u2192 Global accuracy: 0.773
+2025-11-08 11:32:57,431 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 11:35:53,440 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 11:38:46,019 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===
+2025-11-08 11:39:43,848 [INFO] === MediLearn Controller Initialized (FedAvg + Async Upgrade) ===

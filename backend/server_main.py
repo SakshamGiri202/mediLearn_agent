@@ -132,6 +132,11 @@ def simulate_agent_cycle():
         if new_global_weights:
             save_json(GLOBAL_MODEL_FILE, new_global_weights)
 
+            try:
+                generate_explanation(new_global_weights)   # 👈 Add this line
+            except Exception as e:
+                logging.warning(f"SHAP explanation skipped: {e}")
+
         global_data.update({
             "cycle": cycle,
             "global_accuracy": global_accuracy,
