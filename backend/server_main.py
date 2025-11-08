@@ -5,6 +5,8 @@ from fastapi import FastAPI, BackgroundTasks, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, StreamingResponse
 import numpy as np
+from ml_core.explain_model import generate_explanation
+from fastapi.responses import FileResponse
 
 app = FastAPI(title="🧠 MediLearn Controller (FedAvg + Async Upgrade)")
 
@@ -198,6 +200,27 @@ def get_global_model():
         with open(GLOBAL_MODEL_FILE, "r") as f:
             return json.load(f)
     return {"message": "No global model yet."}
+
+@app.get("/explain")
+def explain_global_model():
+    """Generate and return global feature importance plot."""
+    if not os.path.exists(GLOBAL_MODEL_FILE):
+        return {"message": "Error: No global model trained yet."}
+    with open(GLOBAL_MODEL_FILE, "r") as f:
+        weights = json.load(f)
+    path = generate_explanation(weights)
+    return FileResponse(path, media_type="image/png", filename="feature_importance.png")
+
+@app.get("/privacy_stats")
+def privacy_stats():
+    """Return system privacy–utility performance summary."""
+    if not os.path.exists(HISTORY_FILE):
+        return {"message": "No training history yet."}
+    with open(HISTORY_FILE, "r") as f:
+        data = json.load(f)
+    utilities = [h.get("hospitals", [{}])[0].get("utility_score", 0) for h in data if h.get("hospitals")]
+    avg_utility = round(sum(utilities) / len(utilities), 2) if utilities else 0
+    return {"avg_privacy_utility_score": avg_utility, "noise_sigma": 0.02, "status": "Active"}
 
 @app.get("/stream")
 async def stream_status():

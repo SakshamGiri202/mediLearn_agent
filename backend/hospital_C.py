@@ -1,11 +1,12 @@
-# backend/hospital_C.py
-import json
+import sys, os, json, logging
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from ml_core.train_local import train_on_local_data
 from datetime import datetime
 
-app = FastAPI(title="🏥 Hospital C - Stroke Training Node")
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from ml_core.train_local import train_on_local_data
+
+app = FastAPI(title="Hospital C Local Training Node")
 
 app.add_middleware(
     CORSMiddleware,
@@ -14,23 +15,41 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/train")
-async def train_model(request: Request):
-    """Train model on Hospital C’s local stroke dataset."""
-    payload = await request.json()
-    global_weights = payload.get("global_weights", None)
+logging.basicConfig(
+    filename="hospital_C.log",
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+)
 
-    local_weights, accuracy, samples = train_on_local_data("stroke.csv", global_weights)
-    result = {
-        "hospital": "Hospital_C",
-        "dataset": "stroke.csv",
-        "accuracy": accuracy,
-        "samples": samples,
-        "weights": local_weights,
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    }
-    return result
+DATASET = "stroke.csv"
+
+@app.post("/train")
+async def train(request: Request):
+    try:
+        payload = await request.json()
+        global_weights = payload.get("global_weights")
+
+        weights, accuracy, samples = train_on_local_data(DATASET, global_weights)
+        response = {
+            "hospital": "Hospital_C",
+            "accuracy": accuracy,
+            "samples": samples,
+            "weights": weights,
+            "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        }
+        logging.info(f"Hospital C → Training done. Accuracy={accuracy}")
+        return response
+
+    except Exception as e:
+        logging.error(f"Training error: {e}", exc_info=True)
+        return {"error": f"Training failed: {str(e)}"}
+
 
 @app.get("/health")
-def health_check():
-    return {"status": "Hospital C active ✅"}
+def health():
+    return {"status": "Hospital C active ✅", "dataset": DATASET}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8003)

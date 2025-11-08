@@ -1,0 +1,24 @@
+2025-11-08 11:05:46,234 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_C.py", line 32, in train
+    weights, accuracy, samples = train_on_local_data(DATASET, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-08 11:05:51,361 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_C.py", line 32, in train
+    weights, accuracy, samples = train_on_local_data(DATASET, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-08 11:05:56,454 [ERROR] Training error: too many values to unpack (expected 3)
+Traceback (most recent call last):
+  File "C:\Users\Dell\mediLearn_agent\backend\hospital_C.py", line 32, in train
+    weights, accuracy, samples = train_on_local_data(DATASET, global_weights)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)
+2025-11-08 11:10:30,349 [INFO] Hospital C \u2192 Training done. Accuracy=0.625
+2025-11-08 11:10:35,433 [INFO] Hospital C \u2192 Training done. Accuracy=0.625
+2025-11-08 11:10:40,528 [INFO] Hospital C \u2192 Training done. Accuracy=0.625
+2025-11-08 11:12:30,753 [INFO] Hospital C \u2192 Training done. Accuracy=0.625
+2025-11-08 11:12:35,838 [INFO] Hospital C \u2192 Training done. Accuracy=0.625
+2025-11-08 11:12:40,923 [INFO] Hospital C \u2192 Training done. Accuracy=0.625
